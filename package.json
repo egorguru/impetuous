@@ -19,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/EgorRepnikov/impetuous/issues"
   },
-  "homepage": "https://github.com/EgorRepnikov/impetuous#readme"
+  "homepage": "https://github.com/EgorRepnikov/impetuous#readme",
+  "dependencies": {
+    "fast-decode-uri-component": "^1.0.1",
+    "fast-url-parser": "^1.1.3",
+    "querystringparser": "^0.1.1"
+  }
 }
