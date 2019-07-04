@@ -1,0 +1,23 @@
+{
+  "name": "impetuous",
+  "version": "0.1.0",
+  "description": "Perhaps the Fastest Node.js Router...",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EgorRepnikov/impetuous.git"
+  },
+  "keywords": [
+    "web",
+    "fast",
+    "router",
+    "framework",
+    "dragonrend"
+  ],
+  "author": "Egor Repnikov <egorepnikov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EgorRepnikov/impetuous/issues"
+  },
+  "homepage": "https://github.com/EgorRepnikov/impetuous#readme"
+}
