@@ -1,6 +1,6 @@
 {
   "name": "impetuous",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Perhaps the Fastest Node.js Router...",
   "main": "index.js",
   "repository": {
