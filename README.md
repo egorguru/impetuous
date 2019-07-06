@@ -55,18 +55,24 @@ http
 `add` adds a new handler for the method and path.
 
 `method` Type: `String`
+
 `path` Type: `String`
+
 `handler` Type: `Any` what you need
 
 ### find(method, path)
 `find` finds the handler for the method and path.
 
 `method` Type: `String`
+
 `path` Type: `String`
 
 Returns Object with the following fields:
+
 `handler` Type: `Any` what you added
+
 `params` Type: `Object` contains params from path `/path/:param` <- like this
+
 `query` Type: `Object` contains params from query `/path?param=HiThere` <- like this
 
 # Usage Example
