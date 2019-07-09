@@ -1,7 +1,7 @@
 {
   "name": "impetuous",
   "version": "0.1.2",
-  "description": "Perhaps the Fastest Node.js Router...",
+  "description": "Incredibly Impetuous Node.js Router",
   "main": "index.js",
   "repository": {
     "type": "git",
