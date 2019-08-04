@@ -38,7 +38,7 @@ router.add('DELETE', '/path/:param', [
 router.find('GET', '/path')
 // -> { handler: [Function] }
 
-router.find('GET', '/path/') <- '/' at the end works
+router.find('GET', '/path/') // <- '/' at the end works
 // -> { handler: [Function] }
 
 router.find('GET', '/path?firstParam=Hi&secondParam=There')
