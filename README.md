@@ -16,38 +16,40 @@ const Impetuous = require('impetuous')
 
 const router = new Impetuous()
 
-// Static route without params
-router.add('GET', '/path', (req, res) => {
-  res.writeHead(200, { 'Content-Type': 'application/json' })
-  res.end(JSON.parse({ message: 'Hello World' }))
+// Third handler argument can be, what you want
+router.add('GET', '/path', () => {
+  // Handle something
 })
 
-// Dinamic route with params
-router.add('GET', '/path/:param', (req, res, params) => {
-  res.writeHead(200, { 'Content-Type': 'application/json' })
-  res.end(JSON.parse({ message: params.param }))
+router.add('POST', '/path', () => {
+  // Handle something
 })
 
-// Route with query params
-router.add('GET', '/path', (req, res, params, query) => {
-  // Handler Function can be what you want
-  res.writeHead(200, { 'Content-Type': 'application/json' })
-  res.end(JSON.parse({ message: query.param }))
-})
+// Third handler argument can be, what you want
+router.add('DELETE', '/path/:param', [
+  () => {
+    // Handle something
+  },
+  () => {
+    // Handle something
+  }
+])
 
-http
-  .createServer((req, res) => {
-    const { method, url } = req
-    const route = router.find(method, url)
-    if (route === null) {
-      res.writeHead(404, { 'Content-Type': 'application/json' })
-      res.end(JSON.parse({ message: 'Not Found' }))
-    } else {
-      const { handler, params, query } = route
-      handler(req, res, params, query) // Handler Function can be what you want
-    }
-  })
-  .listen(8080)
+router.find('GET', '/path')
+// -> { handler: [Function] }
+
+router.find('GET', '/path/') <- '/' at the end works
+// -> { handler: [Function] }
+
+router.find('GET', '/path?firstParam=Hi&secondParam=There')
+// -> { handler: [Function], query: { firstParam: "Hi", secondParam: "There" } }
+
+router.find('POST', '/path')
+// -> { handler: [Function] }
+
+router.find('DELETE', '/path/123')
+// -> { handler: [[Function, Function]], params: { param: 123 } }
+
 ```
 
 # API
