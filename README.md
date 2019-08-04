@@ -29,7 +29,7 @@ router.add('GET', '/path/:param', (req, res, params) => {
 })
 
 // Route with query params
-router.add('GET', '/path?param=HiThere', (req, res, params, query) => {
+router.add('GET', '/path', (req, res, params, query) => {
   // Handler Function can be what you want
   res.writeHead(200, { 'Content-Type': 'application/json' })
   res.end(JSON.parse({ message: query.param }))
