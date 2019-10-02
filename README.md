@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/EgorRepnikov/impetuous.svg?branch=master)](https://travis-ci.org/EgorRepnikov/impetuous)
+[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/EgorRepnikov/impetuous/blob/master/LICENSE)
+
 # Impetuous
 Impetuous is simple and fast Node.js Router for building web applications.
 
