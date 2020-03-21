@@ -1,6 +1,6 @@
 {
   "name": "impetuous",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Incredibly Impetuous Node.js Router",
   "main": "index.js",
   "scripts": {

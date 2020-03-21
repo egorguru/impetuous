@@ -44,9 +44,6 @@ router.find('GET', '/path')
 router.find('GET', '/path/') // <- '/' at the end works
 // -> { handler: [Function] }
 
-router.find('GET', '/path?firstParam=Hi&secondParam=There')
-// -> { handler: [Function], query: { firstParam: "Hi", secondParam: "There" } }
-
 router.find('POST', '/path')
 // -> { handler: [Function] }
 
@@ -67,8 +64,6 @@ Returns Object with the following fields:
 `handler: Any` what you added
 
 `params: Object` contains params from path `/path/:param` <- like this
-
-`query: Object` contains params from query `/path?param=HiThere` <- like this
 
 # Usage Example
 
